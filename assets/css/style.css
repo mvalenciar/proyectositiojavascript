@@ -16,11 +16,20 @@ a {
 }
 
 .layout {
-  display: block;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "slider slider"
+    "main aside";
   margin: 15px auto 25px;
   padding: 20px;
   width: 80%;
   background-color: white;
+}
+
+.layout__header {
+  grid-area: header;
 }
 
 .header__title {
@@ -59,6 +68,18 @@ a {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+.layout__slider {
+  grid-area: slider;
+}
+
+.layout__article {
+  grid-area: main;
+}
+
+.widget {
+  grid-area: aside;
 }
 
 .footer {
