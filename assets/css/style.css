@@ -1,3 +1,5 @@
+/* ESTILOS GENERALES */
+
 html {
   font-size: 62.5%;
 }
@@ -15,6 +17,8 @@ a {
   cursor: pointer;
 }
 
+/* ESTILO LAYOUT PRINCIPAL */
+
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -26,7 +30,10 @@ a {
   padding: 20px;
   width: 80%;
   background-color: white;
+  row-gap: 2.5rem;
 }
+
+/* ESTILOS HEADER */
 
 .layout__header {
   grid-area: header;
@@ -69,6 +76,8 @@ a {
   -o-transform: scale(1.1);
 }
 
+/* ESTILOS SLIDER */
+
 .layout__slider {
   grid-area: slider;
   position: relative;
@@ -90,11 +99,25 @@ a {
   color: white;
   font-size: 2.5rem;
   cursor: pointer;
+  border: none;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.slider__btn:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 .slider__btn-prev {
@@ -104,6 +127,14 @@ a {
 .slider__btn-next {
   left: auto;
   right: 1rem;
+}
+
+.slider__img {
+  opacity: 0;
+}
+
+.slider__img--active {
+  opacity: 1;
 }
 
 .layout__article {
