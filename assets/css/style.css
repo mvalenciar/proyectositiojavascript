@@ -137,8 +137,60 @@ a {
   opacity: 1;
 }
 
+/* ESTILOS ARTÍCULOS */
+
 .layout__article {
   grid-area: main;
+}
+
+.article_content {
+  margin-bottom: 2rem;
+}
+
+.article__title {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.article__date {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.article__text {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.article__button {
+  margin-top: 1rem;
+  width: 9rem;
+  height: 4rem;
+  text-transform: capitalize;
+  border: none;
+  background-color: #1e87c8;
+  color: white;
+  box-shadow: 0px 0px 3px black;
+  cursor: pointer;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.article__button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 .widget {
