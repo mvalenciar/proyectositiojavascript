@@ -5,7 +5,6 @@ let accordionHead = document.querySelectorAll(
 accordionHead.forEach((faq) => {
   faq.addEventListener("change", (event) => {
     let faqContent = faq.nextElementSibling;
-    console.log(faqContent);
     if (event.target.checked) {
       faqContent.style.height = faqContent.scrollHeight + 30 + "px";
     } else {

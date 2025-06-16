@@ -45,6 +45,15 @@
   .layout__slider {
     height: 25rem;
   }
+
+  /*ESTILO DEL RELOJ*/
+  .marco_reloj {
+    font-size: 4rem;
+  }
+
+  .dia {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 520px) {

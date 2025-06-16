@@ -335,7 +335,7 @@ a {
 }
 
 .accordion input[type="checkbox"] {
-  display: none;
+  display: block;
 }
 
 .accordion li {
@@ -401,4 +401,69 @@ a {
   background-color: #41485093;
   color: white;
   text-align: center;
+}
+
+/*Estilos Reloj*/
+
+.reloj__container {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px grey, 0px 0px 10px lightgray inset;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.marco_reloj {
+  display: flex;
+  justify-content: center;
+  font-size: 7rem;
+  color: #1e87c8;
+}
+
+.marco_reloj > span {
+  animation: fadeIn 1s infinite ease-in-out;
+  -webkit-animation: fadeIn 1s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.horas,
+.minutos,
+.segundos {
+  text-shadow: 0px 0px 0.5px aquamarine, 0px 0px 1px aquamarine,
+    0px 0px 1.5px aquamarine;
+}
+
+.dias_semana {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dia {
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.dia--active {
+  opacity: 1;
+  color: #1e87c8;
+}
+
+.reloj_fecha {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
