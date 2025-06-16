@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <script src="./assets/js/main.js" defer></script>
-    <script src="./assets/js/article.js" defer></script>
     <script src="./assets/js/login.js" defer></script>
+    <script src="./assets/js/accordeon.js" defer></script>
 
     <title>Web JS Vainilla</title>
   </head>
@@ -66,7 +66,70 @@
         </button>
       </section>
       <main class="layout__article">
-        <!-- Aquí cargan los artículos -->
+        <div class="article__content">
+          <div class="accordion __container">
+            <ul class="accordion">
+              <h2 class="article__title">FAQs</h2>
+              <li>
+                <label for="primero">¿Qué es JavaScript?</label>
+                <input
+                  type="checkbox"
+                  name="primero"
+                  id="primero"
+                  class="faqcheck"
+                />
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vel, odio earum. Nemo veniam iure totam quos perspiciatis
+                    eveniet animi quam ut labore autem possimus exercitationem,
+                    nesciunt, impedit ratione hic ad?
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="segundo"
+                  >¿Frameworks mas populares de JavaScript?</label
+                >
+                <input type="checkbox" name="segundo" id="segundo" />
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vel, odio earum. Nemo veniam iure totam quos perspiciatis
+                    eveniet animi quam ut labore autem possimus exercitationem,
+                    nesciunt, impedit ratione hic ad?
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="tercero">¿Para qué sirve JavaScript?</label>
+                <input type="checkbox" name="tercero" id="tercero" />
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vel, odio earum. Nemo veniam iure totam quos perspiciatis
+                    eveniet animi quam ut labore autem possimus exercitationem,
+                    nesciunt, impedit ratione hic ad?
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="cuarto"
+                  >¿Cúales son los lenguajes mas populares del 2024?</label
+                >
+                <input type="checkbox" name="cuarto" id="cuarto" />
+                <div class="accordion__content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vel, odio earum. Nemo veniam iure totam quos perspiciatis
+                    eveniet animi quam ut labore autem possimus exercitationem,
+                    nesciunt, impedit ratione hic ad?
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
       <aside class="widget">
         <div class="widget__content">
@@ -83,7 +146,7 @@
         </div>
         <div class="widget__content">
           <h3 class="widget__title">
-            <span class="title__span">identificate</span>
+            <span class="title__span">identifícate</span>
           </h3>
           <div class="content__widget__form">
             <form class="widget__form">

@@ -10,11 +10,13 @@ let getUser = () => {
   if (myUser) {
     let identity = JSON.parse(myUser);
 
-    contentForm.innerHTML = `Hola ${identity.name}`;
+    contentForm.innerHTML = `<strong>Hola ${identity.name}</strong>`;
     form.style.display = "none";
+
     let btnLogout = document.createElement("button");
     btnLogout.setAttribute("type", "button");
     btnLogout.append(document.createTextNode("Salir"));
+    btnLogout.classList.add("article__button");
     contentForm.append(btnLogout);
 
     btnLogout.addEventListener("click", () => {
