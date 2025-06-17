@@ -329,62 +329,36 @@ a {
 
 /* ESTILOS ACORDEÓN */
 
-.accordion {
+.faqs {
   width: 100%;
-  max-width: 60rem;
-}
-
-.accordion input[type="checkbox"] {
-  display: block;
-}
-
-.accordion li {
-  list-style: none;
-  width: 100%;
-  padding: 0.5rem;
-}
-
-.accordion li label {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 3rem;
   padding: 2rem;
-  margin-bottom: 0.2rem;
-  font-weight: bolder;
-  cursor: pointer;
+}
+
+.faq .faq__head {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   position: relative;
   background-color: #1e87c8;
+  box-shadow: 0px 0px 10px #0077b2 inset;
+  border-bottom: 5px solid black;
   color: white;
+  cursor: pointer;
 }
 
-.accordion li label::after {
-  content: "+";
+.faq .faq__head .faq__head__icon {
   position: absolute;
   left: auto;
-  right: 1rem;
-  font-size: 3rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  right: 2rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
-.accordion .accordion__content {
-  background-color: white;
-  padding: 0 1.5rem;
-  height: 0;
-  overflow: hidden;
-  border: none;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-
-.accordion input[type="checkbox"]:checked ~ ::after {
+.faq.active .faq__head .faq__head__icon {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -392,15 +366,19 @@ a {
   -o-transform: rotate(135deg);
 }
 
-.footer {
-  display: block;
-  height: 3rem;
-  margin: 0px auto;
-  padding: 1px;
-  width: 80%;
-  background-color: #41485093;
-  color: white;
-  text-align: center;
+.faq .faq__content {
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px grey;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.faq .faq__content p {
+  padding: 1rem;
 }
 
 /*Estilos Reloj*/
@@ -466,4 +444,17 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+}
+
+/*ESTILOS FOOTER*/
+
+.footer {
+  display: block;
+  height: 3rem;
+  margin: 0px auto;
+  padding: 1px;
+  width: 80%;
+  background-color: #41485093;
+  color: white;
+  text-align: center;
 }
