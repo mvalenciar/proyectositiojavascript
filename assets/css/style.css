@@ -89,7 +89,7 @@ a {
   transform-origin: left;
 }
 
-.header__btn:hover div:first-child {
+.header__btn.active div:first-child {
   transform: rotate(35deg);
   -webkit-transform: rotate(35deg);
   -moz-transform: rotate(35deg);
@@ -97,11 +97,11 @@ a {
   -o-transform: rotate(35deg);
 }
 
-.header__btn:hover div:nth-child(2) {
+.header__btn.active div:nth-child(2) {
   opacity: 0;
 }
 
-.header__btn:hover div:last-child {
+.header__btn.active div:last-child {
   transform: rotate(-35deg);
   -webkit-transform: rotate(-35deg);
   -moz-transform: rotate(-35deg);

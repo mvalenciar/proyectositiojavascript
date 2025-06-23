@@ -1,9 +1,16 @@
+const navBtn = document.querySelector(".header__btn");
+const navMenu = document.querySelector(".nav__menu");
+
 let slides = document.querySelectorAll(".slider__img");
 let btnNext = document.querySelector(".slider__btn-next");
 let btnPrev = document.querySelector(".slider__btn-prev");
 
 let indexImg = 0;
 let lengthImg = slides.length;
+
+navBtn.addEventListener("click", () => {
+  navBtn.classList.toggle("active");
+});
 
 let clearActives = () => {
   slides.forEach((slide) => {

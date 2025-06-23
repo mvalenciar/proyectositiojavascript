@@ -35,17 +35,12 @@
     -o-transition: all 0.5s;
   }
 
-  .header__btn:hover ~ .header__nav > .nav__menu {
+  .header__btn.active ~ .header__nav > .nav__menu {
     height: 15rem;
   }
 }
 
 @media (max-width: 610px) {
-  /*ESTILO DEL TITULO HEADER*/
-  .header__title {
-    max-width: 17rem;
-  }
-
   /* ESTILO DEL SLIDER*/
   .layout__slider {
     height: 25rem;
@@ -70,6 +65,11 @@
 }
 
 @media (max-width: 520px) {
+  /*ESTILO DEL TITULO HEADER*/
+  .header__title {
+    max-width: 19rem;
+  }
+
   /* ESTILO DEL SLIDER*/
   .layout__slider {
     height: 15rem;
@@ -86,5 +86,12 @@
   .widget__form {
     display: flex;
     flex-direction: column;
+  }
+
+  /*ESTILOS CAMBIADOR DE TEMAS CSS SITIO WEB*/
+  .themes {
+    width: 3.5rem;
+    height: 12rem;
+    padding: 0.5rem;
   }
 }
