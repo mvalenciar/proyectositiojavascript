@@ -41,6 +41,11 @@
 }
 
 @media (max-width: 610px) {
+  /*ESTILO DEL TITULO HEADER*/
+  .header__title {
+    max-width: 17rem;
+  }
+
   /* ESTILO DEL SLIDER*/
   .layout__slider {
     height: 25rem;

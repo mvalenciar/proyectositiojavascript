@@ -32,8 +32,6 @@ let getUser = () => {
 btnSubmit.addEventListener("click", (event) => {
   event.preventDefault;
 
-  alert("Login");
-
   //Tomar datos del formulario
 
   let name = inputName.value;
@@ -51,6 +49,7 @@ btnSubmit.addEventListener("click", (event) => {
     //Vaciar el formulario
     form.reset();
 
+    alert("Login");
     //Mostrar el usuario
     getUser();
   }
