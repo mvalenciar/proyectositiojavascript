@@ -54,6 +54,14 @@
   .dia {
     font-size: 1rem;
   }
+
+  /*ESTILO DE FORMULARIO DE CONTACTO*/
+  .main__contact {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 520px) {

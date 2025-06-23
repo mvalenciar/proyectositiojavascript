@@ -446,6 +446,86 @@ a {
   justify-content: space-around;
 }
 
+/* ESTILOS FORMULARIO CONTACTO */
+
+.main__contact {
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.main__contact .contact__input,
+.main__contact .contact__select {
+  padding: 5px;
+  grid-row: auto;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.contact__group {
+  margin-bottom: 1rem;
+}
+
+.contact__group:nth-child(7) {
+  grid-column: span 2;
+}
+
+.contact__group:nth-child(7) textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 5px;
+  grid-row: auto;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.main__contact .contact__submit {
+  margin-top: 10px;
+  grid-column: span 2;
+  width: 100%;
+  height: 4rem;
+  background-color: #1e87c8;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 3px black;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.main__contact .contact__submit:active {
+  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
+
+.just-validate-error-label {
+  font-style: italic;
+}
+
 /*ESTILOS FOOTER*/
 
 .footer {
